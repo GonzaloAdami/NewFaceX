@@ -1,11 +1,11 @@
-import { Component, ElementRef, Output, EventEmitter } from '@angular/core';
+import { Component, ElementRef, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-top',
-  templateUrl: './top.component.html',
-  styleUrls: ['./top.component.scss']
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss']
 })
-export class TopComponent {
+export class HomeComponent implements OnInit {
   title = 'NewFaceX';
   searchVisible = false;
  

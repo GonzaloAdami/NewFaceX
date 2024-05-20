@@ -1,3 +1,4 @@
-<section id="home">
-
+<section id="section">
+  <app-home  (topEvent)="cambiarSeccion($event)" *ngIf="home"></app-home>
+  <app-top *ngIf="top"></app-top>
 </section>

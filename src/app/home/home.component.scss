@@ -1,0 +1,130 @@
+#section {
+ 
+    grid-template-columns: repeat(2, 1fr);
+    position: relative; /* Asegura que los elementos hijos se posicionen relativos a este contenedor */
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../assets/img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: aqua;
+}
+
+#section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Color de fondo oscuro con un 50% de opacidad */
+
+}
+
+
+
+#home{
+    color: white;
+  
+}
+
+
+/* conteiner de la informacion sobre el anime rank 1 */
+
+
+.containerSectionInfo {
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    padding: 6% 0%;
+    transform: scale(0.9);
+}
+.caps{
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: white;
+    font-size: 1.3rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 10px;
+    width: 13rem;
+    text-align: center;
+    margin: 0;
+}
+
+.titleAnimeRank1{
+    color: white;
+    font-size: 6rem;
+    letter-spacing: 5PX;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.description{
+    color: white;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 1rem;
+    max-width: 55%;
+}
+
+.ranking{
+    
+    color: white;
+    font-size: 1.6rem;
+    margin: 0;
+    margin-top: 1rem;
+    
+}
+.buttons{
+    display: flex;
+    gap: 2rem;
+}
+
+.icon{
+    width: auto;
+    height: 1.5rem;
+}
+.watch{
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    color: rgb(255, 255, 255, 100);
+    background-color: red;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 1rem;
+    border-radius: 20px;
+    width: 13rem;
+    height: 2.5rem;
+    border: none;
+    
+}
+
+
+.list{
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    color: rgb(255, 255, 255, 100);
+    background-color: rgba(41, 38, 53, 0.918);
+    font-size: 1.3rem;
+    margin: 0;
+    margin-top: 1rem;
+    border-radius: 20px;
+    width: 13rem;
+    height: 2.5rem;
+    border: none;
+    
+}
+
+

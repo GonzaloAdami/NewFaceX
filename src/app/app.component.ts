@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'NewFaceX';
+  top = true;
+  home = false;
+
+  constructor() {}
+  cambiarSeccion(seccion: string) {
+    switch(seccion){
+      case "home":
+        this.top = false;
+        this.home = true;
+        break;
+
+      case "top":
+        this.top = true;
+        this.home = false;
+        break;
+
+    }
+
+  }
 }
